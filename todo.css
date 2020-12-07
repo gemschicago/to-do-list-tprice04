@@ -1,8 +1,30 @@
+html, body {
+
+	width: 50%;
+	margin: 0 auto
+
+}
+
+
 #home{
 
 	font-family: 'Playfair Display', serif;
 }
 
-#buttons{
+#textfield{
+	width: 300px;
+	height: 46px;
+	border: 1px;
+	font size: 24px;
+	vertical-align: middle;
+
 	
+}
+
+#add{
+	height: 50px;
+	width: 50px;
+	border: 1px;
+	vertical-align: middle;
+	font-size: 30px;
 }
