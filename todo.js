@@ -1,16 +1,24 @@
 window.onload= function(){
 
-	var newTask=document.getElementById ("new-task-create")
-	var addButton=document.getElementById("add");
-	var todoContainer=document.getElementById("todolist");
-	
+var addButton=document.getElementById("add");
+addButton.addEventListener("click", addTask);
+var tasks = [];
 
+function addTask(){
+var task = document.getElementById ("textfield").value;
+if (task.length > 0) {
+tasks.push(task);
+var addTask = document.getElementById("todolist");
+addTask.insertAdjacentHTML("beforeend", "<li> "+ task + "</li>");
+    }
+}
 
+}
 
 
 function addTask(){
 	var label = document.getElementById ("textfield")
-	var task = document.getElementById ("tectfield").text;
+	var task = document.getElementById ("textfield").text;
 	tasks.push(task);
 	displayTasks();
 	console.log (task)
@@ -18,25 +26,7 @@ function addTask(){
 
 }
 
-var createNewTaskElement=function(taskString){
-
-	var listItem=document.createElement("ul");
-
-	var checkBox=document.createElement("input");
-
-	var label=document.createElement("label");
-
-	var editInput=document.createElement("input");
-
-}
 
 
-function displayTask(){
-
-	var task = [];
-
-	for task { (var = 0;  < tasks.length; ++){
-	 var addTask = document.getElementById("todolist"); 
-	 add.innerHTML += "<ul>tasks[i]</ul>" }
 
 }

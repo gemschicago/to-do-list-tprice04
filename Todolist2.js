@@ -1,0 +1,40 @@
+/** 
+Trinity Price
+11/17/2020
+To Do List Features:
+- add task (as many as needed)
+- mark off task (by clicking once)
+- delete indiviual task (by double clicking)
+**/
+
+
+window.onload= function(){
+
+let addToDoButton=document.getElementById('addToDo');
+let toDoContainer=document.getElementById('toDoContainer');
+let textField=document.getElementById('inputField');
+
+addToDoButton.addEventListener('click', function(){
+	var paragraph = document.createElement('p')
+	paragraph.classList.add('paragraph-styling');
+	paragraph.innerText = inputField.value;
+	toDoContainer.appendChild(paragraph);
+	inputField.value = "";
+	paragraph.addEventListener('click', function(){
+		paragraph.style.textDecoration = "line-through";
+
+	})
+	paragraph.addEventListener('dblclick', function(){
+		toDoContainer.removeChild(paragraph);
+
+	})
+
+
+
+
+
+
+
+})
+
+}
